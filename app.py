@@ -36,4 +36,4 @@ def output():
         return render_template('bad.html')
 
 
-app.run(port=80,debug=True,host=0.0.0.0)
+app.run(port=80,debug=True)
