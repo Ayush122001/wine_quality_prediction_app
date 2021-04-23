@@ -6,4 +6,4 @@ COPY templates/index.html  /templates/index.html
 COPY templates/good.html  /templates/good.html
 COPY templates/bad.html  /templates/bad.html
 COPY templates/form.html  /templates/form.html
-CMD ["python3","/ws/app.py"]
+CMD ["python3","/app.py"]
