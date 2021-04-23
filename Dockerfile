@@ -1,10 +1,9 @@
 FROM ayush122001/keras-flask-jenkins:v2
-RUN mkdir /ws
-COPY app.py /ws/
-COPY final.h5 /ws/
-RUN mkdir /ws/templates
-COPY templates/index.html /ws/templates/
-COPY templates/good.html /ws/templates/
-COPY templates/bad.html /ws/templates/
-COPY templates/form.html /ws/templates/
+COPY app.py /
+COPY final.h5 /
+RUN mkdir /templates
+COPY templates/index.html  /templates/index.html
+COPY templates/good.html  /templates/good.html
+COPY templates/bad.html  /templates/bad.html
+COPY templates/form.html  /templates/form.html
 CMD ["python3","/ws/app.py"]
